@@ -15,3 +15,11 @@ li
 {
 display: inline-block;
 }
+.block
+{
+    display: inline-block;
+    background:crimson;
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgb(rgb(116, 1, 1), green, blue);
+}
