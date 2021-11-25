@@ -22,16 +22,27 @@
         <h3 class='virsraksts'>Sveiks: </h3>
 
         <div class="game">
-          <div class="block" id="L0"><div>🥰</div></div><!--beidzas block-->
-          <div class="block" id="L1"><div>🥳</div> </div><!--beidzas block-->
-          <div class="block" id="L2"><div>😤</div> </div><!--beidzas block-->
-          <div class="block" id="L3"><div>🤯</div> </div><!--beidzas block-->
-          <div class="block" id="L4"><div>🥶</div> </div><!--beidzas block-->
-          <div class="block" id="L5"><div>🙄</div></div><!--beidzas block-->
+          <div class="block" id="L0" onclick="veiktGajienu('L0')"><div>🥰</div></div><!--beidzas block-->
+          <div class="block" id="L1" onclick="veiktGajienu('L1')"><div>🥶</div> </div><!--beidzas block-->
+          <div class="block" id="L2" onclick="veiktGajienu('L2')"><div>🤯</div> </div><!--beidzas block-->
+          <div class="block" id="L3" onclick="veiktGajienu('L3')"><div>🤯</div> </div><!--beidzas block-->
+          <div class="block" id="L4" onclick="veiktGajienu('L4')"><div>🥶</div> </div><!--beidzas block-->
+          <div class="block" id="L5" onclick="veiktGajienu('L5')"><div>🥰</div></div><!--beidzas block-->
           
         </div><!--beidzas game-->
 
       </div><!--beidzas content-->
   </div><!--beidzas wrapper-->
+
+<script>
+
+function veiktGajienu(laukums)
+{
+console.log(laukums)
+document.querySelector('#'+laukums+' div').style.display="block"
+}
+
+</script>
+
 </body>
 </html>
